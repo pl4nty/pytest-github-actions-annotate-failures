@@ -128,7 +128,7 @@ class _AnnotateWarnings:
 
         workflow_command = _build_workflow_command(
             "warning",
-            filesystempath,
+            compute_path(filesystempath),
             warning_message.lineno,
             message=str(warning_message.message),
         )
